@@ -1,6 +1,5 @@
-import 'package:eduapp/Home/homePage.dart';
-import 'package:eduapp/card/card.dart';
 import 'package:eduapp/footer/footer.dart';
+import 'package:eduapp/subjects/subjects.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,7 +28,9 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: Homepage(),
+        body: Subjects(
+          Subject: "Neet",
+        ),
         bottomNavigationBar: const Footer(),
       ),
     );

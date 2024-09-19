@@ -2,18 +2,19 @@ import 'package:eduapp/card/card.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
+  const Homepage({super.key});
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return  Column(
       mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        CardPanel(nameOfCard: 'Jee'),
-        SizedBox(
+        CardPanel(nameOfCard: 'Jee'  , isSubject: false),
+        const SizedBox(
           height: 20,
         ),
-        CardPanel(nameOfCard: 'Neet'),
+        CardPanel(nameOfCard: 'Neet' , isSubject: false),
       ],
     );
   }
